@@ -143,6 +143,7 @@ extern uint32_t _ebss;
 void
 ResetISR(void)
 {
+	WDTCTL = 0x5AFF; 
     uint32_t *src, *dest;
 
     //
